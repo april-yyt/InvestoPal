@@ -12,6 +12,8 @@ struct SignInScreenView: View {
     @State private var password: String = "" // by default it's empty
     @State private var phonenumber: String = "" // by default it's empty
     @State private var signInOption = 0 // 0 for email, 1 for phone
+    @State private var isLoggedIn = false
+
     var body: some View {
         ZStack {
 //            LinearGradient(gradient: Gradient(colors: [lightBlue, lavender]), startPoint: .top, endPoint: .bottom)
@@ -59,7 +61,21 @@ struct SignInScreenView: View {
                                                 .multilineTextAlignment(.trailing)
                                                 .padding(.bottom)
                         
-                                            SecondaryButton(title: "Login")
+//                                            NavigationLink(
+//                                                destination: HomeScreenView(),
+//                                                isActive: $isLoggedIn,
+//                                                label: {
+//                                                    SecondaryButton(title: "Login")
+//                                                })
+                        
+                                        NavigationLink(
+                                            destination: HomeScreenView(),
+                                            label: {
+                                                SecondaryButton(title: "Login")
+                                            })
+                                            .statusBarHidden()
+
+//                                            SecondaryButton(title: "Login")
                         
                                         } else { // Phone option selected
                                             TextField("Phone number", text: $phonenumber)

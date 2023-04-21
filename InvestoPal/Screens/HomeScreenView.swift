@@ -9,7 +9,38 @@ import SwiftUI
 
 struct HomeScreenView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+                    Text("Home")
+                        .tabItem {
+                            Image(systemName: "1.circle")
+                            Text("Home")
+                        }
+                    
+                    Text("News")
+                        .tabItem {
+                            Image(systemName: "2.circle")
+                            Text("News")
+                        }
+                    
+                    Text("Invest")
+                        .tabItem {
+                            Image(systemName: "3.circle")
+                            Text("Invest")
+                        }
+            
+                    Text("Stock")
+                        .tabItem {
+                            Image(systemName: "3.circle")
+                            Text("Stock")
+                        }
+            
+                    Text("Account")
+                        .tabItem {
+                            Image(systemName: "3.circle")
+                            Text("Account")
+                        }
+            
+                }
     }
 }
 
