@@ -22,11 +22,20 @@ struct WelcomeScreenView: View {
                     .ignoresSafeArea()
                 VStack {
                     Spacer()
-                    Logo()
+                    LogoLight()
                     .padding(.top, -100)
                     .padding(.bottom, 50)
                     Spacer()
-                    PrimaryButton(title: "Get Started")
+                    
+                    NavigationLink(
+                        destination: SignUpScreenView().navigationBarHidden(true),
+                        label: {
+                            PrimaryButton(title: "Get Started")
+                        })
+                    .statusBarHidden()
+//                    .navigationBarBackButtonHidden(false)
+//                        .navigationBarHidden(false)
+                    
                     
                     NavigationLink(
                         destination: SignInScreenView().navigationBarHidden(true),
@@ -42,7 +51,10 @@ struct WelcomeScreenView: View {
                                 .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
                                 .padding(.bottom, 30)
                         })
-                        .navigationBarHidden(true)
+                        .statusBarHidden()
+//                        .navigationBarBackButtonHidden(false)
+//                        .navigationBarHidden(false)
+
                     
 //                    HStack {
 //                        Text("New around here? ")
@@ -52,6 +64,7 @@ struct WelcomeScreenView: View {
                 }
                 .padding()
             }
+            .navigationBarTitle("", displayMode: .inline)
         }
     }
 }

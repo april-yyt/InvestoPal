@@ -18,6 +18,8 @@
 		4FEFEB6B29F29714008F2DC7 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB6A29F29714008F2DC7 /* WelcomeScreenView.swift */; };
 		4FEFEB6D29F29A27008F2DC7 /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB6C29F29A27008F2DC7 /* SignInScreenView.swift */; };
 		4FEFEB6F29F2A069008F2DC7 /* SignUpScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB6E29F2A069008F2DC7 /* SignUpScreenView.swift */; };
+		4FEFEB7129F2E463008F2DC7 /* appleligothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FEFEB7029F2E463008F2DC7 /* appleligothic.ttf */; };
+		4FEFEB7329F2E992008F2DC7 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB7229F2E992008F2DC7 /* HomeScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		4FEFEB6A29F29714008F2DC7 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		4FEFEB6C29F29A27008F2DC7 /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
 		4FEFEB6E29F2A069008F2DC7 /* SignUpScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenView.swift; sourceTree = "<group>"; };
+		4FEFEB7029F2E463008F2DC7 /* appleligothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = appleligothic.ttf; path = ../../../../../Downloads/appleligothic.ttf; sourceTree = "<group>"; };
+		4FEFEB7229F2E992008F2DC7 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				4FEFEB3F29F21B04008F2DC7 /* ContentView.swift */,
 				4FEFEB4129F21B05008F2DC7 /* Assets.xcassets */,
 				4FEFEB6729F27769008F2DC7 /* applegothic.ttf */,
+				4FEFEB7029F2E463008F2DC7 /* appleligothic.ttf */,
 				4FEFEB4329F21B05008F2DC7 /* Preview Content */,
 			);
 			path = InvestoPal;
@@ -143,6 +148,7 @@
 				4FEFEB6A29F29714008F2DC7 /* WelcomeScreenView.swift */,
 				4FEFEB6C29F29A27008F2DC7 /* SignInScreenView.swift */,
 				4FEFEB6E29F2A069008F2DC7 /* SignUpScreenView.swift */,
+				4FEFEB7229F2E992008F2DC7 /* HomeScreenView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			files = (
 				4FEFEB4529F21B05008F2DC7 /* Preview Assets.xcassets in Resources */,
 				4FEFEB6829F27769008F2DC7 /* applegothic.ttf in Resources */,
+				4FEFEB7129F2E463008F2DC7 /* appleligothic.ttf in Resources */,
 				4FEFEB4229F21B05008F2DC7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +288,7 @@
 				4FEFEB6D29F29A27008F2DC7 /* SignInScreenView.swift in Sources */,
 				4FEFEB6B29F29714008F2DC7 /* WelcomeScreenView.swift in Sources */,
 				4FEFEB4029F21B04008F2DC7 /* ContentView.swift in Sources */,
+				4FEFEB7329F2E992008F2DC7 /* HomeScreenView.swift in Sources */,
 				4FEFEB6F29F2A069008F2DC7 /* SignUpScreenView.swift in Sources */,
 				4FEFEB3E29F21B04008F2DC7 /* InvestoPalApp.swift in Sources */,
 			);

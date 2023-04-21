@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-
-import SwiftUI
-
 struct SignInScreenView: View {
     @State private var email: String = "" // by default it's empty
     @State private var password: String = "" // by default it's empty
+    @State private var phonenumber: String = "" // by default it's empty
+    @State private var signInOption = 0 // 0 for email, 1 for phone
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [lightBlue, lavender]), startPoint: .top, endPoint: .bottom)
-                .ignoresSafeArea()
+//            LinearGradient(gradient: Gradient(colors: [lightBlue, lavender]), startPoint: .top, endPoint: .bottom)
+//                .ignoresSafeArea()
+            Color("BgColor").edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
                 
@@ -29,31 +29,51 @@ struct SignInScreenView: View {
                     Text("Hello, welcome back to your account!")
                         .padding(.bottom, 30)
                     
-                    TextField("Email address", text: $email)
-                        .font(.title3)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.white)
-                        .cornerRadius(10.0)
-                        .shadow(color: Color.black.opacity(0.08), radius: 60, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 16)
-                        .padding(.top)
-
-                    TextField("Password", text: $password)
-                        .font(.title3)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.white)
-                        .cornerRadius(10.0)
-                        .shadow(color: Color.black.opacity(0.08), radius: 60, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 16)
-                        .padding(.vertical, 3)
+                    HStack {
+                                            SegmentedPicker(options: ["Email", "Phone"], selection: $signInOption)
+                                        }
+                                        .padding(.horizontal)
+                                        .padding(.top)
                     
-                    Text("Forgot password?")
-                        .foregroundColor(Color.black.opacity(0.4))
-                        .multilineTextAlignment(.trailing)
-                        .padding(.bottom)
-                    
-                    
-                    SecondaryButton(title: "Login")
+                    if signInOption == 0 { // Email option selected
+                                            TextField("Email address", text: $email)
+                                                .font(.title3)
+                                                .padding()
+                                                .frame(maxWidth: .infinity)
+                                                .background(Color.white)
+                                                .cornerRadius(10.0)
+                                                .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                                                .padding(.top)
+                        
+                                            TextField("Password", text: $password)
+                                                .font(.title3)
+                                                .padding()
+                                                .frame(maxWidth: .infinity)
+                                                .background(Color.white)
+                                                .cornerRadius(10.0)
+                                                .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                                                .padding(.vertical, 3)
+                                            
+                                            Text("Forgot password?")
+                                                .foregroundColor(Color.black.opacity(0.4))
+                                                .multilineTextAlignment(.trailing)
+                                                .padding(.bottom)
+                        
+                                            SecondaryButton(title: "Login")
+                        
+                                        } else { // Phone option selected
+                                            TextField("Phone number", text: $phonenumber)
+                                                .font(.title3)
+                                                .padding()
+                                                .frame(maxWidth: .infinity)
+                                                .background(Color.white)
+                                                .cornerRadius(10.0)
+                                                .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                                                .padding(.top)
+                                            
+                                            SecondaryButton(title: "Send OTP")
+                                            
+                                        }
                     
                     Text("Or sign up with")
                         .foregroundColor(Color.black.opacity(0.4))
@@ -70,10 +90,6 @@ struct SignInScreenView: View {
                         Text("Create Account")
                             .foregroundColor(Color.black)
                     }
-                    
-                    
-            
-                    
                 }
                 
                 Spacer()
@@ -83,7 +99,7 @@ struct SignInScreenView: View {
 //                Text("Read our Terms & Conditions.")
 //                    .foregroundColor(Color("PrimaryColor"))
                 
-                Logo()
+                LogoLight()
                 Spacer()
                 
             }
@@ -99,23 +115,4 @@ struct SignInScreenView_Previews: PreviewProvider {
 }
 
 
-struct SocalLoginButton: View {
-    var image: Image
-    var text: Text
-    
-    var body: some View {
-        HStack {
-            image
-                .padding(.horizontal)
-            Spacer()
-            text
-                .font(.title2)
-            Spacer()
-        }
-        .padding()
-        .frame(maxWidth: .infinity)
-        .background(Color.white)
-        .cornerRadius(50.0)
-        .shadow(color: Color.black.opacity(0.08), radius: 60, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 16)
-    }
-}
+
