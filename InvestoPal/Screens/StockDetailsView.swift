@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import SwiftUICharts
+import XCAStocksAPI
+
+
 
 struct StockDetailsView: View {
     let stock: Stock
-    
+    let stocks = XCAStocksAPI()
     var body: some View {
         VStack(alignment: .leading) {
             Text(stock.name)
@@ -25,6 +29,7 @@ struct StockDetailsView: View {
         }
         .padding()
         .navigationBarTitle(Text(stock.symbol))
+
     }
 }
 

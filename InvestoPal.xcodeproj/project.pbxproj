@@ -26,6 +26,7 @@
 		73B16F1129F7894C006ED594 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B16F1029F7894C006ED594 /* Stock.swift */; };
 		73B16F1329F78982006ED594 /* StockRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B16F1229F78982006ED594 /* StockRow.swift */; };
 		73B16F1529F78AF1006ED594 /* StockDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B16F1429F78AF1006ED594 /* StockDetailsView.swift */; };
+		73B16F1829F78E59006ED594 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 73B16F1729F78E59006ED594 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B16F1829F78E59006ED594 /* SwiftUICharts in Frameworks */,
 				73B16F0629F786BB006ED594 /* XCAStocksAPI in Frameworks */,
 				73B16F0829F786BB006ED594 /* XCAStocksExec in Frameworks */,
 			);
@@ -204,6 +206,7 @@
 			packageProductDependencies = (
 				73B16F0529F786BB006ED594 /* XCAStocksAPI */,
 				73B16F0729F786BB006ED594 /* XCAStocksExec */,
+				73B16F1729F78E59006ED594 /* SwiftUICharts */,
 			);
 			productName = InvestoPal;
 			productReference = 4FEFEB3A29F21B04008F2DC7 /* InvestoPal.app */;
@@ -279,6 +282,7 @@
 			mainGroup = 4FEFEB3129F21B04008F2DC7;
 			packageReferences = (
 				73B16F0429F786BB006ED594 /* XCRemoteSwiftPackageReference "XCAStocksAPI" */,
+				73B16F1629F78E59006ED594 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
 			);
 			productRefGroup = 4FEFEB3B29F21B04008F2DC7 /* Products */;
 			projectDirPath = "";
@@ -668,6 +672,14 @@
 				kind = branch;
 			};
 		};
+		73B16F1629F78E59006ED594 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -680,6 +692,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 73B16F0429F786BB006ED594 /* XCRemoteSwiftPackageReference "XCAStocksAPI" */;
 			productName = XCAStocksExec;
+		};
+		73B16F1729F78E59006ED594 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73B16F1629F78E59006ED594 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
