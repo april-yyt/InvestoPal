@@ -14,12 +14,18 @@
 		4FEFEB4F29F21B05008F2DC7 /* InvestoPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB4E29F21B05008F2DC7 /* InvestoPalTests.swift */; };
 		4FEFEB5929F21B05008F2DC7 /* InvestoPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB5829F21B05008F2DC7 /* InvestoPalUITests.swift */; };
 		4FEFEB5B29F21B05008F2DC7 /* InvestoPalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB5A29F21B05008F2DC7 /* InvestoPalUITestsLaunchTests.swift */; };
-		4FEFEB6829F27769008F2DC7 /* applegothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FEFEB6729F27769008F2DC7 /* applegothic.ttf */; };
 		4FEFEB6B29F29714008F2DC7 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB6A29F29714008F2DC7 /* WelcomeScreenView.swift */; };
 		4FEFEB6D29F29A27008F2DC7 /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB6C29F29A27008F2DC7 /* SignInScreenView.swift */; };
 		4FEFEB6F29F2A069008F2DC7 /* SignUpScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB6E29F2A069008F2DC7 /* SignUpScreenView.swift */; };
-		4FEFEB7129F2E463008F2DC7 /* appleligothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FEFEB7029F2E463008F2DC7 /* appleligothic.ttf */; };
 		4FEFEB7329F2E992008F2DC7 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFEB7229F2E992008F2DC7 /* HomeScreenView.swift */; };
+		73B16F0329F78452006ED594 /* applegothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73B16F0229F78452006ED594 /* applegothic.ttf */; };
+		73B16F0629F786BB006ED594 /* XCAStocksAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 73B16F0529F786BB006ED594 /* XCAStocksAPI */; };
+		73B16F0829F786BB006ED594 /* XCAStocksExec in Frameworks */ = {isa = PBXBuildFile; productRef = 73B16F0729F786BB006ED594 /* XCAStocksExec */; };
+		73B16F0C29F787DB006ED594 /* StockMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B16F0B29F787DB006ED594 /* StockMenuView.swift */; };
+		73B16F0F29F78923006ED594 /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B16F0E29F78923006ED594 /* StockData.swift */; };
+		73B16F1129F7894C006ED594 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B16F1029F7894C006ED594 /* Stock.swift */; };
+		73B16F1329F78982006ED594 /* StockRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B16F1229F78982006ED594 /* StockRow.swift */; };
+		73B16F1529F78AF1006ED594 /* StockDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B16F1429F78AF1006ED594 /* StockDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +56,16 @@
 		4FEFEB5429F21B05008F2DC7 /* InvestoPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestoPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEFEB5829F21B05008F2DC7 /* InvestoPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestoPalUITests.swift; sourceTree = "<group>"; };
 		4FEFEB5A29F21B05008F2DC7 /* InvestoPalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestoPalUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4FEFEB6729F27769008F2DC7 /* applegothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = applegothic.ttf; path = ../../../../../Downloads/applegothic.ttf; sourceTree = "<group>"; };
 		4FEFEB6A29F29714008F2DC7 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		4FEFEB6C29F29A27008F2DC7 /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
 		4FEFEB6E29F2A069008F2DC7 /* SignUpScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenView.swift; sourceTree = "<group>"; };
-		4FEFEB7029F2E463008F2DC7 /* appleligothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = appleligothic.ttf; path = ../../../../../Downloads/appleligothic.ttf; sourceTree = "<group>"; };
 		4FEFEB7229F2E992008F2DC7 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		73B16F0229F78452006ED594 /* applegothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = applegothic.ttf; sourceTree = "<group>"; };
+		73B16F0B29F787DB006ED594 /* StockMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMenuView.swift; sourceTree = "<group>"; };
+		73B16F0E29F78923006ED594 /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
+		73B16F1029F7894C006ED594 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		73B16F1229F78982006ED594 /* StockRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRow.swift; sourceTree = "<group>"; };
+		73B16F1429F78AF1006ED594 /* StockDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B16F0629F786BB006ED594 /* XCAStocksAPI in Frameworks */,
+				73B16F0829F786BB006ED594 /* XCAStocksExec in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,12 +118,11 @@
 		4FEFEB3C29F21B04008F2DC7 /* InvestoPal */ = {
 			isa = PBXGroup;
 			children = (
+				73B16F0129F783F8006ED594 /* font */,
 				4FEFEB6929F29696008F2DC7 /* Screens */,
 				4FEFEB3D29F21B04008F2DC7 /* InvestoPalApp.swift */,
 				4FEFEB3F29F21B04008F2DC7 /* ContentView.swift */,
 				4FEFEB4129F21B05008F2DC7 /* Assets.xcassets */,
-				4FEFEB6729F27769008F2DC7 /* applegothic.ttf */,
-				4FEFEB7029F2E463008F2DC7 /* appleligothic.ttf */,
 				4FEFEB4329F21B05008F2DC7 /* Preview Content */,
 			);
 			path = InvestoPal;
@@ -145,12 +156,33 @@
 		4FEFEB6929F29696008F2DC7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				73B16F0D29F78906006ED594 /* StockData */,
 				4FEFEB6A29F29714008F2DC7 /* WelcomeScreenView.swift */,
 				4FEFEB6C29F29A27008F2DC7 /* SignInScreenView.swift */,
 				4FEFEB6E29F2A069008F2DC7 /* SignUpScreenView.swift */,
 				4FEFEB7229F2E992008F2DC7 /* HomeScreenView.swift */,
+				73B16F0B29F787DB006ED594 /* StockMenuView.swift */,
+				73B16F1429F78AF1006ED594 /* StockDetailsView.swift */,
+				73B16F1229F78982006ED594 /* StockRow.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		73B16F0129F783F8006ED594 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				73B16F0229F78452006ED594 /* applegothic.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		73B16F0D29F78906006ED594 /* StockData */ = {
+			isa = PBXGroup;
+			children = (
+				73B16F0E29F78923006ED594 /* StockData.swift */,
+				73B16F1029F7894C006ED594 /* Stock.swift */,
+			);
+			path = StockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +201,10 @@
 			dependencies = (
 			);
 			name = InvestoPal;
+			packageProductDependencies = (
+				73B16F0529F786BB006ED594 /* XCAStocksAPI */,
+				73B16F0729F786BB006ED594 /* XCAStocksExec */,
+			);
 			productName = InvestoPal;
 			productReference = 4FEFEB3A29F21B04008F2DC7 /* InvestoPal.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +277,9 @@
 				Base,
 			);
 			mainGroup = 4FEFEB3129F21B04008F2DC7;
+			packageReferences = (
+				73B16F0429F786BB006ED594 /* XCRemoteSwiftPackageReference "XCAStocksAPI" */,
+			);
 			productRefGroup = 4FEFEB3B29F21B04008F2DC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FEFEB4529F21B05008F2DC7 /* Preview Assets.xcassets in Resources */,
-				4FEFEB6829F27769008F2DC7 /* applegothic.ttf in Resources */,
-				4FEFEB7129F2E463008F2DC7 /* appleligothic.ttf in Resources */,
+				73B16F0329F78452006ED594 /* applegothic.ttf in Resources */,
 				4FEFEB4229F21B05008F2DC7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,12 +323,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B16F0F29F78923006ED594 /* StockData.swift in Sources */,
 				4FEFEB6D29F29A27008F2DC7 /* SignInScreenView.swift in Sources */,
 				4FEFEB6B29F29714008F2DC7 /* WelcomeScreenView.swift in Sources */,
 				4FEFEB4029F21B04008F2DC7 /* ContentView.swift in Sources */,
 				4FEFEB7329F2E992008F2DC7 /* HomeScreenView.swift in Sources */,
 				4FEFEB6F29F2A069008F2DC7 /* SignUpScreenView.swift in Sources */,
+				73B16F0C29F787DB006ED594 /* StockMenuView.swift in Sources */,
 				4FEFEB3E29F21B04008F2DC7 /* InvestoPalApp.swift in Sources */,
+				73B16F1129F7894C006ED594 /* Stock.swift in Sources */,
+				73B16F1529F78AF1006ED594 /* StockDetailsView.swift in Sources */,
+				73B16F1329F78982006ED594 /* StockRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +658,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		73B16F0429F786BB006ED594 /* XCRemoteSwiftPackageReference "XCAStocksAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAStocksAPI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73B16F0529F786BB006ED594 /* XCAStocksAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73B16F0429F786BB006ED594 /* XCRemoteSwiftPackageReference "XCAStocksAPI" */;
+			productName = XCAStocksAPI;
+		};
+		73B16F0729F786BB006ED594 /* XCAStocksExec */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73B16F0429F786BB006ED594 /* XCRemoteSwiftPackageReference "XCAStocksAPI" */;
+			productName = XCAStocksExec;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FEFEB3229F21B04008F2DC7 /* Project object */;
 }

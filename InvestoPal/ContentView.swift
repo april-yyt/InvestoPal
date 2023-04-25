@@ -81,7 +81,7 @@ struct LogoLight: View{
                 Text("Pal").bold()
                     .font(.custom("appleligothic", size: 38))
                     .foregroundColor(fontColor1)
-                //                        .fontWeight(.bold)
+                                        .fontWeight(.bold)
             }.padding(.bottom, 5)
             Text("Your Loyal Investment Financial Analysis Tool 🫡")
                 .font(.custom("appleligothic", size: 14))
@@ -93,7 +93,6 @@ struct LogoLight: View{
 struct SegmentedPicker: View {
     var options: [String]
     @Binding var selection: Int
-    
     var body: some View {
         HStack {
             ForEach(0..<options.count) { index in
