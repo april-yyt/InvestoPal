@@ -57,9 +57,12 @@ struct NewsView: View {
                             .padding(.horizontal)
 
                         ForEach(filteredArticles) { article in
-                            NewsArticleView(article: article)
-                                .padding(.horizontal)
+                            NavigationLink(destination: SafariView(url: URL(string: article.url)!)) {
+                                NewsArticleView(article: article)
+                                    .padding(.horizontal)
+                            }
                         }
+
                     }
                 }
                 .background(Color(.systemGroupedBackground).edgesIgnoringSafeArea(.bottom))
