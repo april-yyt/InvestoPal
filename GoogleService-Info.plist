@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>212036503619-d92pcotqpmnh650tjg1b9tbm3unjka9k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.212036503619-d92pcotqpmnh650tjg1b9tbm3unjka9k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCfq1ftztpSfB31t0PAR-mfICF4NMwweXs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>212036503619</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.aprilyang.InvestoPal428</string>
+	<key>PROJECT_ID</key>
+	<string>investopal-1055b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>investopal-1055b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:212036503619:ios:2c25271f6dca939496acf6</string>
+</dict>
+</plist>
