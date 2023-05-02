@@ -1,3 +1,5 @@
-# InvestoPal
+# InvestoPal == StocksApp
 
-check for the pushing and merging
+Enables users to login, check recent financial news, view stocks data, select stocks and save to watch list.
+
+Built upon XCAStocksAPI, Yahoo! Finance API.
